@@ -33,7 +33,7 @@ obtain singular values as well as how much variance each component explains.
 
 ```rust
 use ndarray::arr2;
-use petal_decomposition::Pca;
+use petal_decomposition::PcaBuilder;
 
 let x = arr2(&[[0_f64, 0_f64], [1_f64, 1_f64], [2_f64, 2_f64]]);
 let mut pca = PcaBuilder::new(2).build(); // Keep two dimensions.
